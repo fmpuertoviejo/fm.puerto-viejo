@@ -1,0 +1,42 @@
+fm-puerto-viejo/
+├── index.html
+├── js/
+│   ├── jquery-3.2.1.min.js
+│   └── lunaradio-sincors.js
+└── css/
+    └── styles.css
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FM Puerto Viejo</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/lunaradio-sincors.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unica+One&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="lunaradio" class="lunaaudioplayer">
+        <!-- Contenido del reproductor de radio -->
+        <audio controls autoplay>
+            <source src="https://stream.zeno.fm/lsmgt6vhdxruv" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+</body>
+</html>
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.postimg.cc/nzCb9H1f/449217683-1807427823395976-5351199727574542858-n.jpg') center bottom / cover no-repeat;
+    overflow: hidden;
+}
+#lunaradio {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
